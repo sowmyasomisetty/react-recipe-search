@@ -1,10 +1,13 @@
 {
+  "homepage": "https://sowmyasomisetty.github.io/react-recipe-search",
   "name": "react-recipe-search",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "preseploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
