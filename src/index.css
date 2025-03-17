@@ -1,0 +1,110 @@
+/* Default Light Mode */
+body {
+  background: #f8f8f8;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-theme {
+  background: #121212;
+  color: #f8f8f8;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.theme-label {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Recipe Image */
+.recipe-image {
+  width: 70%; /* Smaller size */
+  max-width: 280px; /* Set a max width */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Ingredient List */
+.ingredient-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredient-list li {
+  padding: 5px;
+  font-size: 1rem;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 5px;
+  margin: 3px 0;
+}
+
+/* Cooking Instructions */
+.recipe-instructions {
+  padding: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background: rgba(255, 165, 0, 0.1);
+  border-radius: 5px;
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer; /* Add pointer cursor */
+}
